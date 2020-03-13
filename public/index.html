@@ -1,32 +1,53 @@
 <!doctype html>
 <html>
     <head>
-        <title>NV Spirit Store</title>
+        <title>Spotibyte</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <header>
-            <h1>NV Spirit Store</h1>
+            <h1>Spotibyte</h1>
         </header>
-        <section id="account">
-            <form>
-                <label for="first">First Name: </label>
-                <input name="first" required>
-                <label for="last">Last Name: </label>
-                <input name="last" required>
-                <label for="email">Email: </label>
-                <input name="email" required>
-                <label for="password">Password: </label>
-                <input name="password" type="password" required>
-                <input type="submit" onClick="login(event)">
+        <section style="width: 40%; display: inline-flex; background-color: #0B1620; border: 5px #0489F8; border-style: solid" >
+            <form  id="login" style="position:relative; left: 7%">
+                <h3>Log In</h3>
+                <label for = "username">Username</label>
+                <input name = "username" required>
+                <label for = "password">Password</label>
+                <input name = "password" required>
+                <input type="submit">
+            </form>
+            
+            
+            <form id="register" style="position:relative; left: 33%;">
+                <h3>Register</h3>
+                <label for ="first">First Name</label>
+                <input name = "first" required>
+                <label for = "last">Last Name</label>
+                <input name = "last" required>
+                <label for = "email">Email</label>
+                <input name = "email" required>
+                <label for = "username">Username</label>
+                <input name = "username" required>
+                <label for = "password">Password</label>
+                <input name = "password" required>
+                <input type="submit">
+            </form>
+            
+        </section>
+        <section>
+            <h3>Add Song</h3>
+            <form id="addSong">
+                <label for ="songname">Song Name</label>
+                <input name = "songname" required>
+                <label for ="bandname">Band/Writer(s)</label>
+                <input name = "bandname" required>
+                <label for ="album">Album</label>
+                <input name = "album">
+                <input type="submit">
             </form>
         </section>
-        <section id="cart">
-            <h3>Cart</h3>
-            <ul>
-            </ul>
-        </section>
-        <section id="items">
+        <section id="songlist">
         </section>
         <script src="script.js"></script>
     </body>
